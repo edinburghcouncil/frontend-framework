@@ -1,0 +1,55 @@
+.school-logo {
+	@include respond-min(44em) {
+		width: 80px;
+		}
+	}
+	
+.school-nav {
+	margin-top: 1.5em;
+	}
+	
+.school-nav li {
+	@include respond-min(44em) {
+		float: right;
+		margin-left: 1em;
+		}
+	@include respond-min(50em) {
+		margin-left: 2em;
+		}
+	@include respond-min(60em) {
+		margin-left: 2.5em;
+		}
+	@include respond-min(70em) {
+		margin-left: 4em;
+		}
+	}
+	
+.school-nav li .button {
+	@include respond-min(44em) {
+		margin-top: -1em;
+		}
+	}
+	
+.school-title {
+	margin-bottom: 0 !important;
+	}
+	
+.school-news h3 {
+	margin-top: 0;
+	}
+	
+.school-date {
+	color: #666;
+	font-size: 0.8em;
+	font-style: italic;
+	}
+	
+.school-calendar .lister li a {
+	display: inline;
+	margin-left: 2em;
+	width: auto;
+	}
+	
+.school-nugget {
+	border: 1px solid 
+	}

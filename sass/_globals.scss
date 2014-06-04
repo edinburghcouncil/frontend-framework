@@ -1,0 +1,170 @@
+@font-face {
+	font-family: MetaWeb-Bold;
+	src: url("../fonts/MetaWeb-Bold.woff") format("woff");
+	}
+	
+html, 
+body, 
+button, 
+input, 
+select, 
+textarea, 
+.standard-type {
+	font-family: Verdana, sans-serif;
+	line-height: 1.6;
+	}
+	
+.wf-active html, 
+.wf-active body, 
+.wf-active button, 
+.wf-active input, 
+.wf-active select, 
+.wf-active textarea, 
+.wf-active .standard-type {
+	font-family: 'Open Sans', Verdana, sans-serif;
+	}
+
+body {
+	color: #333;
+	font-size: 1em;
+	@include respond-min(60em) {
+		font-size: 1.1em;
+		}
+	}
+	
+body:after, 
+.sizer {
+	content: 'small';
+	display: none;
+	@include respond-min(44em) {
+		content: 'large';
+		}
+	}
+	
+a {
+	border-bottom: 1px solid $blue;
+	color: $blue;
+	@include transition(color 0.2s linear);
+	}
+	
+a:hover, 
+a:focus {
+	border-bottom: 1px solid darken($blue, 20%);
+	color: darken($blue, 20%);
+	}
+	
+a.alternate {
+	color: $green;
+	}
+	
+a.alternate:hover, 
+a.alternate:focus {
+	color: darken($green, 20%);
+	}
+	
+a[href^='http']:after {
+	color: #a4a4a4;
+	content: '\e80e';
+	font-family: 'fontello';
+	font-size: 0.8em;
+	margin-left: 0.3em;
+	vertical-align: baseline; 
+	}
+
+a[href*="edinburgh.gov.uk"]:after, 
+.no-external a:after {
+	content: ''; 
+	margin-left: 0;
+	}
+	
+h1, 
+h2, 
+h3, 
+h4 {
+	font-weight: bold;
+	line-height: 1.2;
+	}
+	
+h1, 
+h2, 
+.button,
+input.button, 
+button.button,  
+.brand-type {
+	font-family: MetaWeb-Bold, "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+	font-weight: normal;
+	}
+	
+h1, 
+h1.col {
+	border-bottom: 1px solid $grey;
+	font-size: 1.8em;
+	margin-bottom: 0.7em; 
+	padding-bottom: 0.2em;
+	@include respond-min(45em) {
+		font-size: 2em;
+		margin-bottom: 1em; 
+		padding-bottom: 0.5em;
+		}
+	}
+	
+h2 {
+	font-size: 1.5em;
+	margin: 2em 0 0.5em 0;
+	}
+
+h3 {
+	font-size: 1.2em;
+	margin: 2em 0 0.5em 0;
+	}
+	
+h4 {
+	font-size: 1.1em;
+	margin: 1.5em 0 0.5em 0;
+	}
+	
+h5, 
+h6 {
+	margin: 1.5em 0 0.5em 0;
+	}
+	
+p {
+	margin-bottom: 1em;
+	}
+	
+small, 
+.small-print {
+	color: #666;
+	font-size: 0.8em;
+	}
+	
+img, 
+svg, 
+video, 
+audio {
+	height: auto;
+	width: 100%;
+	}
+	
+.video-container {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	position: relative;
+	}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	}
+	
+.away {
+	left: -9999em;
+	position: absolute;
+	}

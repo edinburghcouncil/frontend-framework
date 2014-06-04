@@ -1,0 +1,78 @@
+#rn_DevelopmentHeader img {
+	width: auto;
+	}
+	
+.rn-loading-icon {
+	display: none !important;
+	}
+	
+.rn_ErrorMessage b {
+	font-weight: normal !important;
+	}
+	
+body > [id^="yui_3_8_1"]:first-child {
+	height: 0;
+	}
+	
+.yui3-panel {
+	background: #fff;
+	border: 1px solid $grey;
+	padding: 1em;
+	}
+
+.yui3-widget-hd {
+	font-family: MetaWeb-Bold, "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+	font-size: 1.5em;
+	margin: 0 0 0.5em 0;
+	}
+	
+.yui3-widget-hd .yui3-widget-buttons {
+	float: right;
+	}
+	
+.yui3-widget-hd .yui3-widget-buttons button {
+	background: #fff;
+	}
+	
+.yui3-widget-bd {
+	margin-bottom: 1em;
+	}
+	
+.yui3-widget-ft .yui3-button {
+	background: #36854E;
+	border: 0;
+	color: #fff;
+	display: block;
+	font-family: MetaWeb-Bold, "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+	font-weight: normal;
+	padding: 0.7em;
+	text-align: center;
+	text-decoration: none;
+	@include border-radius(4px);
+	}
+	
+.yui3-widget-ft .yui3-button:hover,
+.yui3-widget-ft .yui3-button:focus {
+	background: darken($green, 10%);
+	border: 0;
+	color: #fff;
+	text-decoration: none;
+	}
+	
+.rn_Hidden { 
+	display: none;
+	}
+	
+/* OVERRIDES -  REMOVE WHEN MAP FILES ARE FIXED */
+
+.mblBackground {
+	background: #fff !important;
+	}
+	
+.mobile body {
+	color: #333;
+	font-size: 1em !important;
+	@include respond-min(60em) {
+		font-size: 1.1em !important;
+		}
+	}

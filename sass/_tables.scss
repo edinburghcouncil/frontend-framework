@@ -1,0 +1,58 @@
+table {
+    border: 1px solid $grey;
+    margin-bottom: 1em;
+    width: 100%;
+    }
+
+.calendar h3 {
+    text-align: center;
+    }
+
+.calendar .button {
+    margin-top: -.5em;
+    }
+
+h3 .prev {
+    float: left;
+    margin-right: 1%;
+    }
+
+h3 .next {
+    float: right;
+    margin-left: 1%;
+    }
+    
+thead tr:nth-child(odd) {
+    background: #fff;
+    }
+    
+tr:nth-child(odd) {
+    background: lighten($grey, 15%);
+    }
+    
+th, 
+td {
+    border-right: 1px solid $grey;
+    padding: 0.5em;
+    }
+    
+th {
+    border-bottom: 1px solid $grey;
+    text-align: left;
+    }
+
+td.today {
+    background-color: $blue;
+    color: #fff;
+    }
+
+td.today a {
+    color: #fff;
+    border-bottom-color: #fff;
+    }
+
+td.today a:hover, 
+td.today a:focus {
+    border-bottom: 1px solid darken(#fff, 20%);
+    color: darken(#fff, 20%);
+    }

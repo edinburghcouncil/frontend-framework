@@ -1,0 +1,29 @@
+.mblView .map {
+	border: 1px solid $grey;
+	}
+	
+#mapContainer {
+	position: relative;
+	}
+	
+#mapView, 
+#mapContainer, 
+#map {
+	height: 300px !important;
+	}
+	
+#mapContainer a {
+	border: 0 !important; 
+	}
+	
+.map-embed {
+	border: 1px solid $grey;
+	height: 500px;
+	margin-bottom: 1em;
+	max-width: 100% !important;
+	width: 100% !important;
+	@include respond-max(44em) {
+		max-width: 85% !important;
+		min-width: 0 !important;
+		}
+	}

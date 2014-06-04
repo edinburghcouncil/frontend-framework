@@ -1,0 +1,19 @@
+.pagination {
+	h3 {
+		float: left;
+		margin: .7em .8em .7em 0;
+	}
+}
+
+.paginate__inline {
+	margin-top: .9em;
+	li {
+		float: left;
+		font-size: 1.1em;
+		border-bottom: 0;
+		padding: .65em .6em;
+		a {
+			display: inline;
+		}
+	}
+}

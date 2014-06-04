@@ -1,0 +1,78 @@
+[role="contentinfo"] {
+	background: #000;
+	color: #fff;
+	font-size: 0.9em;
+	padding-top: 2em;
+	}
+	
+[role="contentinfo"] a {
+	border-bottom-color: #fff;
+	color: #fff;
+	}
+	
+[role="contentinfo"] a:hover, 
+[role="contentinfo"] a:focus {
+	border: 0;
+	}
+	
+[role="contentinfo"] li {
+	margin-bottom: 1em;
+	@include respond-min(25em) {
+		float: left;
+		margin-bottom: 0;
+		margin-right: 2em;
+		}
+	}
+	
+[role="contentinfo"] .social {
+	width: auto;
+	}
+	
+[role="contentinfo"] .social li a:before {
+	margin-right: 0;
+	}
+	
+[role="contentinfo"] .social li {
+	float: left;
+	font-size: 1.2em;
+	margin-right: 2em;
+	}
+
+[role="contentinfo"] li:last-child, 
+[role="contentinfo"] .social li:last-child {
+	margin-right: 0;
+	}
+	
+[role="contentinfo"] .social li a, 
+[role="contentinfo"] .social li a:hover, 
+[role="contentinfo"] .social li a:focus {
+	border: 0;
+	text-decoration: none;
+	}
+	
+[role="contentinfo"] .social li a:after {
+	padding: 0;
+	}
+	
+[role="contentinfo"] .small-print {
+	color: #ccc;
+	@include respond-min(44em) {
+		margin-bottom: 0.5em;
+		}
+	}
+	
+[role="contentinfo"] .tab-logo {
+	border: 0;
+	}
+	
+[role="contentinfo"] .tab-logo svg {
+	float: right;
+	height: 60px;
+	margin-top: 1em;
+	width: 150px;
+	@include respond-min(44em) {
+		height: 80px;
+		margin-top: 0;
+		width: 200px;
+		}
+	}

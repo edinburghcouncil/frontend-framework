@@ -1,0 +1,31 @@
+.cookies-message {
+	background: lighten($grey, 10%);
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	}
+	
+.cookies-message p {
+	font-size: 0.7em;
+	margin-bottom: 0;
+	text-align: center;
+	}
+	
+.cookies-message span {
+	@include respond-min(44em) {
+		display: block;
+		}
+	@include respond-min(55em) {
+		display: inline;
+		}
+	}
+	
+.cookies-message .button {
+	font-size: 1.05em;
+	line-height: 1;
+	margin-left: 1em;
+	padding-bottom: 0.4em;
+	padding-top: 0.4em;
+	@include respond-max(44em) {
+			margin-top: 1em;
+		}
+	}

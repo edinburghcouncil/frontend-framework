@@ -1,0 +1,464 @@
+.wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1248px;
+	}
+
+.col {
+	float: left;
+	}
+	
+.no-top {
+	margin-top: 0;
+	}
+
+.col.no-bottom {
+	margin-bottom: 0;
+	}
+
+@mixin span($num, $gutter_pc, $max_columns) {
+	$hundred_percent: 100%;
+	width: (($num / $max_columns) * $hundred_percent) - $gutter_pc;
+	}
+ 
+
+
+@media screen and (max-width: 19.9em) { 
+
+	$max_columns: 1;
+    $gutter_pc: 4%;
+    
+    .col {
+        margin-bottom: $gutter_pc;
+        margin-left: ($gutter_pc/2);
+		margin-right: ($gutter_pc/2);
+        $hundred_percent: 100%;
+		width: $hundred_percent - $gutter_pc;
+        }
+        
+    .bottom-space {
+    	margin-bottom: $gutter_pc;
+    	}
+    	
+    .top-space {
+    	margin-top: $gutter_pc;
+    	}
+        
+    }
+    
+	
+
+@media screen and (min-width: 20em) and (max-width: 44em) {
+    
+    $max_columns: 4;
+    $gutter_pc: 4%;
+    
+    .wrapper {
+        padding-left: ($gutter_pc/2);
+		padding-right: ($gutter_pc/2); 
+        }
+    
+    .col {
+        margin-bottom: $gutter_pc;
+        margin-left: ($gutter_pc/2);
+		margin-right: ($gutter_pc/2);
+        $hundred_percent: 100%;
+		width: $hundred_percent - $gutter_pc;
+        }
+        
+    .bottom-space {
+    	margin-bottom: $gutter_pc;
+    	}
+    	
+    .top-space {
+    	margin-top: $gutter_pc;
+    	}
+    	
+    .small_switch {
+		float: right;
+		margin-right: ($gutter_pc/2);
+		}
+    
+    .small_1 {
+        @include span(1, $gutter_pc, $max_columns);
+        }
+        
+    .small_2 {
+        @include span(2, $gutter_pc, $max_columns);
+        }
+        
+    .small_3 {
+        @include span(3, $gutter_pc, $max_columns);
+        }
+        
+    .small_4, 
+    .full_width {
+    	float: none;
+        @include span(4, $gutter_pc, $max_columns);
+        }
+        
+    .switch {
+    	margin-right: $gutter_pc;
+    	}
+    	
+    .spacer {
+    	width: $gutter_pc;
+    	}
+        
+    }
+    
+    
+    
+@media screen and (min-width: 20em) and (max-width: 35em) {
+    
+    $gutter_pc: 4%;
+    
+    .col {
+        margin-bottom: ($gutter_pc*2);
+        }
+        
+    .bottom-space {
+    	margin-bottom: ($gutter_pc*2);
+    	}
+    	
+    .top-space {
+    	margin-top: ($gutter_pc*2);
+    	}
+        
+    }
+    
+
+
+@media screen and (min-width: 44em) and (max-width: 60em) {
+    
+	$max_columns: 12;
+    $gutter_pc: 4%;
+    
+	.wrapper {
+        padding-left: ($gutter_pc/2);
+		padding-right: ($gutter_pc/2);
+        }
+    
+    .col {
+        margin-bottom: $gutter_pc;
+        margin-left: ($gutter_pc/2);
+		margin-right: ($gutter_pc/2);
+        $hundred_percent: 100%;
+		width: $hundred_percent - $gutter_pc;
+        }
+        
+    .bottom-space {
+    	margin-bottom: $gutter_pc;
+    	}
+    	
+    .top-space {
+    	margin-top: $gutter_pc;
+    	}
+    	
+    .height-wrapper {
+		display: table;
+		margin-bottom: $gutter_pc;
+		width: 100%;
+		}
+		
+	.category-items .height-wrapper {
+		margin-bottom: ((12/8) * $gutter_pc)
+		}
+		
+	.height {
+	    display: table-cell;
+	    float: none;
+	    height: auto;
+	    vertical-align: top; 
+	    }
+    	
+    .spacer {
+    	width: $gutter_pc;
+    	}
+    	
+    .category-items .spacer {
+    	width: ((12/8) * $gutter_pc)
+    	}
+    	
+    .large_switch {
+		float: right;
+		margin-right: ($gutter_pc/2);
+		}
+    
+    .large_1 {
+        @include span(1, $gutter_pc, $max_columns);
+        }
+        
+    .large_1 .bottom-space {
+        margin-bottom: ($gutter_pc * (12/1))
+        }
+        
+    .large_2 {
+        @include span(2, $gutter_pc, $max_columns);
+        }
+        
+    .large_2 .bottom-space {
+        margin-bottom: ($gutter_pc * (12/2))
+        }
+        
+    .large_3 {
+        @include span(3, $gutter_pc, $max_columns);
+        }
+        
+	.large_3 .bottom-space {
+        margin-bottom: ($gutter_pc * (12/3))
+        }
+        
+    .large_4 {
+        @include span(4, $gutter_pc, $max_columns);
+        }
+        
+	.large_4 .bottom-space {
+        margin-bottom: ($gutter_pc * (12/4))
+        }
+        
+    .large_5 {
+        @include span(5, $gutter_pc, $max_columns);
+        }
+        
+	.large_5 .bottom-space {
+        margin-bottom: ($gutter_pc * (12/5))
+        }
+        
+    .large_6 {
+        @include span(6, $gutter_pc, $max_columns);
+        }
+        
+	.large_6 .bottom-space {
+        margin-bottom: ($gutter_pc * (12/6))
+        }
+        
+    .large_7 {
+        @include span(7, $gutter_pc, $max_columns);
+        }
+        
+    .large_7 .bottom-space {
+        margin-bottom: ($gutter_pc * (12/7))
+        }
+        
+    .large_8 {
+        @include span(8, $gutter_pc, $max_columns);
+        }
+        
+    .large_8 .bottom-space {
+        margin-bottom: ($gutter_pc * (12/8))
+        }	
+        
+    .large_9 {
+        @include span(9, $gutter_pc, $max_columns);
+        }
+        
+    .large_9 .bottom-space {
+        margin-bottom: ($gutter_pc * (12/9))
+        }
+        
+    .large_10 {
+        @include span(10, $gutter_pc, $max_columns);
+        }
+        
+    .large_10 .bottom-space {
+        margin-bottom: ($gutter_pc * (12/10))
+        }
+        
+    .large_11 {
+        @include span(11, $gutter_pc, $max_columns);
+        }
+        
+    .large_11 .bottom-space {
+        margin-bottom: ($gutter_pc * (12/11))
+        }
+        
+    .large_12, 
+    .full_width {
+		float: none;
+        @include span(12, $gutter_pc, $max_columns);
+        }
+        
+	.large_12 .bottom-space, 
+	.full_width .bottom-space {
+        margin-bottom: ($gutter_pc * (12/12))
+        }  
+        
+	.large_8 .large_4 {
+		@include span(6.12, $gutter_pc, $max_columns);
+		}
+    
+    }
+    
+@media screen and (min-width: 60em) {
+    
+	$max_columns: 12;
+    $gutter_pc: 3%;
+    
+	.wrapper {
+        padding-left: ($gutter_pc/2);
+		padding-right: ($gutter_pc/2);
+        }
+    
+    .col {
+        margin-bottom: $gutter_pc;
+        margin-left: ($gutter_pc/2);
+		margin-right: ($gutter_pc/2);
+        $hundred_percent: 100%;
+		width: $hundred_percent - $gutter_pc; 
+        }
+        
+    .bottom-space {
+    	margin-bottom: $gutter_pc;
+    	}
+    	
+    .top-space {
+    	margin-top: $gutter_pc;
+    	}
+    	
+    .height-wrapper {
+		display: table;
+		margin-bottom: $gutter_pc;
+		width: 100%;
+		}
+		
+	.category-items .height-wrapper {
+		margin-bottom: ((12/8) * $gutter_pc)
+		}
+		
+	.height {
+	    display: table-cell;
+	    float: none;
+	    height: auto;
+	    vertical-align: top; 
+	    }
+    	
+    .spacer {
+    	width: $gutter_pc;
+    	}
+    	
+    .category-items .spacer {
+    	width: ((12/8) * $gutter_pc)
+    	}
+    	
+    .large_switch {
+		float: right;
+		margin-right: ($gutter_pc/2);
+		}
+    
+    .large_1 {
+        @include span(1, $gutter_pc, $max_columns);
+        }
+        
+    .large_1 .bottom-space {
+        margin-bottom: ($gutter_pc * (12/1))
+        }
+        
+    .large_2 {
+        @include span(2, $gutter_pc, $max_columns);
+        }
+        
+    .large_2 .bottom-space {
+        margin-bottom: ($gutter_pc * (12/2))
+        }
+        
+    .large_3 {
+        @include span(3, $gutter_pc, $max_columns);
+        }
+        
+	.large_3 .bottom-space {
+        margin-bottom: ($gutter_pc * (12/3))
+        }
+        
+    .large_4 {
+        @include span(4, $gutter_pc, $max_columns);
+        }
+        
+	.large_4 .bottom-space {
+        margin-bottom: ($gutter_pc * (12/4))
+        }
+        
+    .large_5 {
+        @include span(5, $gutter_pc, $max_columns);
+        }
+        
+	.large_5 .bottom-space {
+        margin-bottom: ($gutter_pc * (12/5))
+        }
+        
+    .large_6 {
+        @include span(6, $gutter_pc, $max_columns);
+        }
+        
+	.large_6 .bottom-space {
+        margin-bottom: ($gutter_pc * (12/6))
+        }
+        
+    .large_7 {
+        @include span(7, $gutter_pc, $max_columns);
+        }
+        
+    .large_7 .bottom-space {
+        margin-bottom: ($gutter_pc * (12/7))
+        }
+        
+    .large_8 {
+        @include span(8, $gutter_pc, $max_columns);
+        }
+        
+    .large_8 .bottom-space {
+        margin-bottom: ($gutter_pc * (12/8))
+        }	
+        
+    .large_9 {
+        @include span(9, $gutter_pc, $max_columns);
+        }
+        
+    .large_9 .bottom-space {
+        margin-bottom: ($gutter_pc * (12/9))
+        }
+        
+    .large_10 {
+        @include span(10, $gutter_pc, $max_columns);
+        }
+        
+    .large_10 .bottom-space {
+        margin-bottom: ($gutter_pc * (12/10))
+        }
+        
+    .large_11 {
+        @include span(11, $gutter_pc, $max_columns);
+        }
+        
+    .large_11 .bottom-space {
+        margin-bottom: ($gutter_pc * (12/11))
+        }
+        
+    .large_12, 
+    .full_width {
+		float: none;
+        @include span(12, $gutter_pc, $max_columns);
+        }
+        
+	.large_12 .bottom-space, 
+	.full_width .bottom-space {
+        margin-bottom: ($gutter_pc * (12/12))
+        }    
+		
+	.large_8 .large_4 {
+		@include span(6.1, $gutter_pc, $max_columns);
+		}
+    
+    }
+    
+@media screen and (min-width: 75em) { 
+        
+    .bottom-space {
+    	margin-bottom: 36px;
+    	}
+    	
+    .top-space {
+    	margin-top: 36px;
+    	}
+        
+    }

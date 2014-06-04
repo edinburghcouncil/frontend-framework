@@ -1,0 +1,62 @@
+.guide .menu-link {
+	cursor: pointer;
+	@include respond-min(44em) {
+		display: none;
+		}
+	}
+
+.guide-steps {
+	border: 3px solid $grey;
+	font-size: 0.9em;
+	margin-bottom: 2em;
+	margin-top: 1em;
+	padding: 1em;
+	@include respond-min(44em) {
+		margin-top: 0;
+		padding-left: 2em;
+		padding-right: 2em;
+		}
+	@include respond-min(60em) {
+		padding-bottom: 0.4em;
+		-moz-column-count: 2;
+		-moz-column-gap: 2em;
+		-webkit-column-count: 2;
+		-webkit-column-gap: 2em;
+		column-count: 2;
+		column-gap: 2em;
+		}
+	}
+	
+.js .guide-steps {
+	display: none;
+	@include respond-min(44em) {
+		display: block;
+		}
+	}
+	
+.js .guide-steps.show {
+	display: block;
+	}
+	
+.guide-steps li {
+	-webkit-column-break-inside:avoid;
+	-moz-column-break-inside:avoid;
+	-o-column-break-inside:avoid;
+	-ms-column-break-inside:avoid;
+	-moz-page-break-inside:avoid;
+	column-break-inside:avoid;	
+    page-break-inside: avoid;
+	}
+	
+.guide-steps .active {
+	border: 0;
+	color: #333;
+	text-decoration: none;
+	}
+	
+.tab {
+	margin-top: -2em;
+	@include respond-min(44em) {
+		margin-top: -1em;
+		}
+	}

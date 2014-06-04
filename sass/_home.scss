@@ -1,0 +1,49 @@
+.local-search h2 {
+	@include respond-min(70em) {
+		display: inline-block;
+		margin: 0 1em 0 0;
+		vertical-align: middle;
+		}
+	}
+
+.local-search select, 
+.local-search input, 
+.local-search button, 
+.local-search span {
+	display: inline;
+	margin-right: 1em;
+	vertical-align: middle;
+	width: auto;
+	}
+	
+.local-search select {
+	display: inline;
+	vertical-align: middle;
+	}
+	
+.local-search input {
+	margin-bottom: 1em;
+	margin-top: 1em;
+	@include respond-min(40em) {
+		margin-bottom: 0;
+		margin-top: 0
+		}
+	}
+	
+.local-search button {
+	display: inline-block;
+	margin-left: 0;
+	margin-right: 1em;
+	}
+	
+.local-search p {
+	margin-bottom: 0;
+	@include respond-min(44em) {
+		display: inline-block;
+		}
+	}
+	
+.local-search a {
+	display: inline-block;
+	font-size: 0.8em;
+	}

@@ -1,0 +1,59 @@
+.button, 
+button.button {
+	background: #36854E;
+	border: 0;
+	color: #fff;
+	display: block;
+	font-weight: normal;
+	padding: 0.7em;
+	text-align: center;
+	text-decoration: none;
+	@include border-radius;
+	@include transition(background 0.2s linear);
+	@include respond-min(44em) {
+		display: inline-block;
+		padding: 0.62em 1em;
+		}
+	}
+	
+.button:hover,
+.button:focus, 
+a:hover .button,
+a:focus .button {
+	background: darken($green, 10%);
+	border: 0;
+	color: #fff;
+	text-decoration: none;
+	@include box-shadow(none);
+	}
+	
+a[href^='http://'].button:after {
+	color: #fff;
+	margin-left: 1em;
+	}
+
+a[href*="edinburgh.gov.uk"].button:after {
+	content: ''; 
+	margin-left: 0;
+	}
+	
+.no-button, 
+.no-button:hover, 
+.no-button:focus {
+	background: none;
+	border: 0;
+	border-bottom: 1px solid $blue;
+	color: $blue;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	@include box-shadow(none);
+	@include border-radius(0);
+	}
+	
+.no-button:hover, 
+.no-button:focus {
+	border-bottom: 1px solid darken($blue, 20%);
+	color: darken($blue, 20%);
+	}

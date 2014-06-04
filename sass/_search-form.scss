@@ -1,0 +1,98 @@
+[role="search"] {
+	margin-bottom: 0.5em;
+	@include respond-max(19.9em) {
+		margin-top: 0.5em;
+		}
+	}
+	
+[role="search"] .search-field {
+	float: left;
+	font-size: 0.8em;
+	height: 34px;
+	margin: 0;
+	padding: 0.55em;
+	width: 75%;
+	@include border-radius;
+	@include respond-min(60em) {
+		font-size: 0.9em;
+		padding: 0.35em;
+		}
+	@include respond-min(75em) {
+		height: 40px;
+		padding: 0.45em;
+		}
+	}
+	
+::-webkit-input-placeholder {
+   padding-top: 0.2em;
+   }
+
+:-moz-placeholder { /* Firefox 18- */
+   padding-top: 0.2em;
+   }
+
+::-moz-placeholder {  /* Firefox 19+ */
+   padding-top: 0.2em;
+   }
+
+:-ms-input-placeholder {  
+   padding-top: 0.2em;
+   }
+	
+[role="banner"] [role="search"] .search-field {
+	border: 0;
+	}
+	
+[role="search"] .search-field:focus, 
+[role="search"] .search-field:hover {
+	border: none;
+	}
+	
+[role="banner"] [role="search"] {
+	border: 0;
+	}
+	
+[role="search"] .search-field:focus::-webkit-input-placeholder { 
+	color: transparent; 
+	}
+[role="search"] .search-field:focus:-moz-placeholder { 
+	color: transparent; 
+	}
+	
+[role="search"] .button {
+	background: #000;
+	color: #fff;
+	font-size: 0.8em;
+	float: right;
+	height: 34px;
+	line-height: 1;
+	margin-bottom: 0;
+	margin-right: 0;
+	margin-top: 0;
+	padding: 0.8em;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 37%;
+	@include border-radius(0 4px 4px 0); 
+	@include respond-min(20em) {
+		width: 28%;
+		}
+	@include respond-min(44em) {
+		width: 35%;
+		}
+	@include respond-min(60em) {
+		font-size: 0.9em;
+		padding: 0.5em;
+		width: 30%;
+		}
+	@include respond-min(75em) {
+		height: 40px;
+		padding: 0.69em;
+		}
+	}
+	
+[role="search"] button:hover, 
+[role="search"] button:focus {
+	background: lighten(#000, 20%);
+	}

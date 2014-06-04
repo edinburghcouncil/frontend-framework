@@ -1,0 +1,88 @@
+.search-results h1 a {
+	font-size: 0.5em;	
+	margin-left: 1em;
+	}
+
+.did-you-mean {
+	font-style: italic;
+	}
+
+.search-results .lister a {
+	padding-bottom: 1em;
+	padding-top: 1em;
+	}
+	
+.search-results .lister a:hover, 
+.search-results .lister a:focus {
+	text-decoration: none;
+	}
+	
+.search-results .lister a:hover h2, 
+.search-results .lister a:focus h2, 
+.search-results .lister a:hover .result-url, 
+.search-results .lister a:focus .result-url {
+	text-decoration: underline;
+	}
+	
+.search-results .lister h2 {
+	margin-bottom: 0.2em;
+	margin-top: 0;	
+	}
+	
+.search-results .lister br {
+	display: none;
+	}
+	
+.result-description {
+	color: #333;
+	font-weight: normal;
+	margin-bottom: 0.2em;
+	}
+	
+.result-url {
+	margin-bottom: 0;
+	word-wrap: break-word;
+	}
+
+.search-results.lister article {
+	padding-top: 1.5em;
+	}
+
+.search-results.lister article a {
+	border-bottom: 1px solid $grey;
+	display: block;
+	padding-bottom: 1.5em;
+	}
+
+.search-results.lister article h3 {
+	display: inline;
+	margin: 0 0.5em 0 0;
+	text-decoration: underline;
+	width: auto;
+	@include respond-min(44em) {
+		margin-bottom: 0.5em;
+		}
+	}
+
+.search-results.lister article time {
+	color: #333;
+	display: block;
+	font-size: 0.8em;
+	font-style: italic;
+	@include respond-min(44em) {
+		display: inline-block;
+		}
+	}
+
+.search-results.lister article p {
+	color: #333;
+	margin-bottom: 0;
+	margin-top: 0.5em;
+	}
+	
+.lister li.promoted-result {
+	background: #FEEFB3;
+	border: 1px solid $grey;
+	margin-top: 1em;
+	padding: 1em;
+	}

@@ -1,0 +1,24 @@
+.breadcrumbs {
+	border-bottom: 1px solid $grey;
+	padding: 0.5em 0;
+	@include respond-min(44em) {
+		padding: 0.7em 0;
+		}
+	}
+	
+.breadcrumbs nav {
+	font-size: 0.8em;
+	margin-bottom: 0;
+	}
+	
+.breadcrumbs a, 
+.breadcrumbs span {
+	border: 0;
+	display: inline-block;
+	white-space: nowrap;
+	}
+	
+.breadcrumbs a:after {
+	color: #333;
+	margin: 0 1em 0 1.2em;
+	}

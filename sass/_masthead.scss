@@ -1,0 +1,142 @@
+.skip-link.away:focus {
+	background: #fff;
+	left: 1em !important; 
+	padding: 0.5em;
+	z-index: 999; 
+	@include border-radius(0 0 4px 4px);
+	}
+	
+[role="banner"] {
+	background: $brand;
+	padding: 0 !important;
+	position: relative;
+	}
+	
+[role="banner"] a {
+	color: #fff;
+	}
+	
+.logo {
+	margin-bottom: 0;
+	margin-top: 0.75em;
+	@include respond-min(20em) {
+		margin-bottom: 0.75em;
+		}
+	@include respond-min(44em) {
+		margin-bottom: 1em;
+		margin-top: 1em;
+		}
+	@include respond-min(60em) {
+		margin-bottom: 1.5em;
+		margin-top: 1.5em;
+		}
+	}
+	
+.logo a, 
+.logo img {
+	border: 0;	
+	display: block;
+	height: 23px;
+	width: 130px;
+	@include respond-min(44em) {
+		height: 36px;
+		width: 200px;
+		}
+	@include respond-min(75em) {
+		height: 41px;
+		width: 230px;
+		}
+	}
+	
+.login-register, 
+[role="search"] {
+	margin-bottom: 0;
+	position: relative;
+	@include respond-max(44em) {
+		margin-top: 0.35em;
+		}
+	@include respond-min(44em) {
+		margin-top: 1.05em;
+		}
+	@include respond-min(60em) {
+		margin-top: 1.55em;
+		}
+	@include respond-min(75em) {
+		margin-top: 1.55em;
+		}
+	}
+	
+.login-register li {
+	float: left;
+	font-size: 0.8em;
+	@include respond-min(20em) {
+		float: right;
+		font-size: 0.8em;
+		margin-left: 0.5em;
+		}
+	@include respond-min(25em) {
+		margin-left: 1em;
+		}
+	@include respond-min(44em) {
+		margin-left: 0.5em;
+		}
+	@include respond-min(50em) {
+		margin-left: 1em;
+		}
+	@include respond-min(60em) {
+		font-size: 0.9em;
+		margin-left: 1.5em;
+		}
+	}
+	
+.login-register a {
+	background: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+	display: inline-block;
+	line-height: 1;
+	margin-top: 0.5em;
+	padding: 0.45em 0.5em 0.4em 0.5em;
+	@include respond-min(20em) {
+		display: block;
+		}
+	@include respond-min(44em) {
+		margin-top: 0;
+		padding-bottom: 0.7em;
+		padding-top: 0.8em;
+		}
+	@include respond-min(60em) {
+		padding: 0.5em;
+		}
+	@include respond-min(75em) {
+		padding: 0.7em;
+		padding-top: 0.7em;
+		}
+	}
+	
+.login-register .login {
+	float: left;
+	margin-left: 0;
+	@include respond-min(25em) {
+		float: right;
+		}
+	}
+	
+.login-register .login a {
+	border: 1px solid $brand;
+	padding-left: 0;
+	padding-right: 0;
+	white-space: nowrap;
+	}
+	
+.login-register .login a:hover, 
+.login-register .login a:focus {
+	text-decoration: underline;
+	}
+	
+.login-register .button:hover, 
+.login-register .button:focus {
+	background: #fff;
+	border: 1px solid #fff;
+	color: $brand;
+	}
