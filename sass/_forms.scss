@@ -7,11 +7,11 @@ form li {
 	margin-bottom: 0.5em;
 	padding: 1em;
 	}
-	
+
 .article form ul {
 	margin-bottom: 0;
 	}
-	
+
 .article form ul li {
 	list-style-type: none;
 	margin-left: 0;
@@ -22,67 +22,67 @@ legend {
 	margin-bottom: 0.5em;
 	width: 100%;
 	}
-	
-label, 
+
+label,
 .faux-label {
 	display: block;
 	margin-bottom: 0.5em;
 	width: 100%;
 	}
-	
-input, 
-input[type="search"], 
-textarea,  
+
+input,
+input[type="search"],
+textarea,
 select {
 	display: block;
 	max-width: 100%;
 	}
-	
-input, 
+
+input,
 textarea {
 	padding: 0.7em;
 	width: 100%;
 	@include box-shadow(inset 0 1px 6px rgba(0, 0, 0, 0.1));
 	}
-	
-input, 
-input[type="search"], 
+
+input,
+input[type="search"],
 textarea {
 	border: 1px solid darken($grey, 10%);
 	@include border-radius;
-	}	
-	
-input:focus, 
-input:hover, 
-input[type="search"]:focus, 
-input[type="search"]:hover, 
+	}
+
+input:focus,
+input:hover,
+input[type="search"]:focus,
+input[type="search"]:hover,
 textarea:focus,
 textarea:hover {
 	border: 1px solid darken($grey, 30%);
 	@include box-shadow(0 2px 5px #ccc inset);
 	}
-	
+
 input {
 	line-height: 1;
 	}
-	
+
 textarea {
 	min-height: 6em;
 	}
-	
-input[type="submit"], 
-input[type="submit"]:hover, 
+
+input[type="submit"],
+input[type="submit"]:hover,
 input[type="submit"]:focus {
 	border: none;
 	width: auto;
 	@include box-shadow(none);
 	}
-	
+
 .inline-select {
 	display: inline;
 	width: auto;
 	}
-	
+
 fieldset input {
 	margin-bottom: 1em;
 	}
@@ -90,21 +90,21 @@ fieldset input {
 fieldset input:last-of-type {
 	margin-bottom: 0;
 	}
-	
+
 .multiple-fieldsets fieldset input:last-of-type {
 	margin-bottom: 3em;
 	}
-	
+
 .multiple-fieldsets fieldset:last-of-type input:last-of-type {
 	margin-bottom: 0;
 	}
-	
+
 .inline {
 	display: inline;
 	width: auto;
 	}
-	
-input[type="checkbox"], 
+
+input[type="checkbox"],
 input[type="radio"] {
 	border: 0;
 	display: inline;
@@ -112,23 +112,23 @@ input[type="radio"] {
 	width: auto;
 	@include box-shadow(none);
 	}
-	
+
 input[type="file"] {
 	font-size: 0.7em;
 	margin-bottom: 1em;
 	}
-	
-input:focus::-webkit-input-placeholder, 
-textarea:focus::-webkit-input-placeholder, 
-input:focus:-moz-placeholder, 
-textarea:focus:-moz-placeholder { 
-	color: transparent; 
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder,
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+	color: transparent;
 	}
-	
+
 .lookup-options {
 	margin-top: 1em;
 	}
-	
+
 form .button {
 	display: inline-block;
 	margin-left: 1em;
@@ -138,19 +138,19 @@ form .button {
 		width: auto;
 		}
 	}
-	
+
 form .button.no-indent {
 	margin-left: 0;
 	}
-	
-.field-explanation, 
+
+.field-explanation,
 .rn_HintText {
 	font-size: 0.8em;
 	margin-bottom: 0;
 	margin-top: 0.5em;
 	}
-	
-.form-wrapper input, 
+
+.form-wrapper input,
 .form-wrapper select {
 	@include respond-min(30em) {
 		height: 3em;
@@ -158,7 +158,7 @@ form .button.no-indent {
 		width: 65%;
 		}
 	}
-	
+
 .form-wrapper .button {
 	border: 0;
 	margin-left: 0;
@@ -170,19 +170,19 @@ form .button.no-indent {
 		width: 34%;
 		}
 	}
-	
+
 .editable-panel a.edit {
 	float: right;
 	}
-	
-fieldset.two-up, 
-fieldset.three-up, 
+
+fieldset.two-up,
+fieldset.three-up,
 fieldset.inline-fields {
-	margin-bottom: -1em;	
+	margin-bottom: -1em;
 	}
-	
-fieldset.two-up label, 
-fieldset.three-up label, 
+
+fieldset.two-up label,
+fieldset.three-up label,
 fieldset.inline-fields label {
 	float: left;
 	margin-bottom: 1em;
@@ -190,56 +190,56 @@ fieldset.inline-fields label {
 	white-space: nowrap;
 	width: auto;
 	}
-	
-form .two-up label input, 
-form .three-up label input, 
+
+form .two-up label input,
+form .three-up label input,
 form .inline-fields label input {
 	margin-bottom: 0;
 	}
 
-form .two-up label, 
+form .two-up label,
 form .three-up label {
 	width: auto;
 	}
-	
-form .two-up label:last-child, 
+
+form .two-up label:last-child,
 form .three-up label:last-child {
 	margin-right: 0;
 	}
-	
+
 .date-picker-wrapper {
 	position: relative;
 	}
-	
+
 .date-picker-wrapper a.date-picker-control {
 	position: absolute;
 	right: 1em;
 	top: 1em;
 	}
-	
+
 .progress {
 	font-size: 0.8em;
 	padding-left: 1.5em;
 	}
-	
-.progress ol li { 
+
+.progress ol li {
 	float: left;
 	list-style-type: decimal;
 	margin: 0 4em 0 0;
 	}
-	
+
 .progress li .active {
 	font-weight: bold;
 	}
-	
+
 .tooltip:before {
 	margin-right: 0;
 	}
-	
+
 .tooltip {
 	cursor: pointer;
 	}
-	
+
 .popover {
 	position: absolute;
 	top: 0;
@@ -263,23 +263,23 @@ form .three-up label:last-child {
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 	white-space: normal;
 	}
-	
+
 .popover.top {
   	margin-top: -10px;
   	}
-  	
+
 .popover.right {
   	margin-left: 10px;
   	}
-  	
+
 .popover.bottom {
   	margin-top: 10px;
   	}
-  	
+
 .popover.left {
   	margin-left: -10px;
   	}
-  	
+
 .popover-title {
 	margin: 0;
 	padding: 8px 14px;
@@ -296,11 +296,11 @@ form .three-up label:last-child {
 .popover-title:empty {
   	display: none;
   	}
-  	
+
 .popover-content {
   	padding: 9px 14px;
   	}
-  	
+
 .popover .arrow,
 .popover .arrow:after {
 	position: absolute;
@@ -314,12 +314,12 @@ form .three-up label:last-child {
 .popover .arrow {
   	border-width: 11px;
   	}
-  	
+
 .popover .arrow:after {
   	border-width: 10px;
   	content: "";
   	}
-  	
+
 .popover.top .arrow {
 	left: 50%;
 	margin-left: -11px;
@@ -387,53 +387,53 @@ form .three-up label:last-child {
 .popover-content {
 	font-size: 0.8em;
 	}
-	
-.field-validation-error, 
-.errorm, 
+
+.field-validation-error,
+.errorm,
 .rn_ErrorMessage {
 	background-color: #f2dede;
 	border: 1px solid #eed3d7;
 	color: #ba4a48;
 	display: block;
 	margin-bottom: 0.5em;
-	padding: 1em; 
+	padding: 1em;
 	}
-	
-.field-validation-error a, 
-.errorm a, 
+
+.field-validation-error a,
+.errorm a,
 .rn_ErrorMessage a {
 	border-color: darken($blue, 10%);
 	color: darken($blue, 10%);
 	}
-	
-.field-validation-error *:first-child, 
+
+.field-validation-error *:first-child,
 .errorm *:first-child {
 	margin-top: 0;
 	}
-	
-.field-validation-error *:last-child, 
+
+.field-validation-error *:last-child,
 .errorm *:last-child {
 	margin-bottom: 0;
 	}
-	
-.input-validation-error, 
-.input-validation-error:hover, 
-.input-validation-error:focus, 
-.xfperror, 
-.xfperror:hover, 
+
+.input-validation-error,
+.input-validation-error:hover,
+.input-validation-error:focus,
+.xfperror,
+.xfperror:hover,
 .xfperror:focus {
 	background-color: #f2dede;
 	border: 1px solid #ba4a48;
 	}
-	
-	
-	
+
+
+
 /* JADU XFORMS */
 
 .fd-hidden-input					{ display:none; }
-.fd-screen-reader 				{ height:1px; left:-999em; overflow:hidden; outline: 0 none; position:absolute; top:0; width:1px; -moz-outline: 0 none; } 
+.fd-screen-reader 				{ height:1px; left:-999em; overflow:hidden; outline: 0 none; position:absolute; top:0; width:1px; -moz-outline: 0 none; }
 body.fd-drag-active 			{ -webkit-user-select:none; -moz-user-select:none; -khtml-user-select:none; -webkit-touch-callout:none; user-select:none; }
-.static-datepicker 				{ left:0; margin-bottom:1.5em; position:relative; top:5px; }             
+.static-datepicker 				{ left:0; margin-bottom:1.5em; position:relative; top:5px; }
 .date-picker 					{ background:transparent; position:absolute; text-align:center; z-index:9999; -moz-user-select:none; -khtml-user-select:none; -webkit-user-select:none; }
 .date-picker sup 				{ font-size:0.86em; height: 0; letter-spacing:normal; line-height: 1; position: relative; top:-0.2em;	text-transform:none; vertical-align: baseline !important; vertical-align: top; }
 .date-picker table 				{ background :#fff; border-collapse:separate; border-spacing:2px; border:1px solid #ccc; @include border-radius(4px); empty-cells:show; height:auto; margin:0; padding:0.3em; position:relative; text-align:center; z-index:2; width:auto;}
@@ -445,7 +445,7 @@ body.fd-drag-active 			{ -webkit-user-select:none; -moz-user-select:none; -khtml
 .date-picker th span 			{ background:transparent; border:0 none; cursor:pointer; display:block; font-weight:bold; line-height:1em; margin:0; padding:0; text-align:center; }
 .date-picker th.month-out,
 .date-picker th.out-of-range 	{ background:#fcfcfc; color:#aaa; font-style:oblique; }
-.date-picker .month-display, 
+.date-picker .month-display,
 .date-picker .year-display 		{ cursor:default; display:inline; letter-spacing:1px; text-transform:uppercase;}
 .date-picker .prev-but,
 .date-picker .next-but 			{ cursor:pointer; font-weight:normal; font-size:2.4em; -webkit-transition:all .2s ease-in-out; -moz-transition:all .2s ease-in-out; -o-transition:all .2s ease-in-out; transition:all .2s ease-in-out; }
@@ -454,45 +454,45 @@ body.fd-drag-active 			{ -webkit-user-select:none; -moz-user-select:none; -khtml
 .date-picker .next-but:hover,
 .date-picker .today-but:hover	{ color:#a84444; }
 .date-picker .fd-disabled,
-.date-picker .fd-disabled:hover { color:#aaa; cursor:default !important; opacity:1; } 
+.date-picker .fd-disabled:hover { color:#aaa; cursor:default !important; opacity:1; }
 .date-picker .prev-but.fd-disabled:hover,
 .date-picker .next-but.fd-disabled:hover { color:#aaa; cursor:default !important; opacity:1; -webkit-transform:scale(1); -moz-transform:scale(1); -ie-transform:scale(1); -o-transform:scale(1); transform:scale(1); }
-.date-picker .day-disabled 		{ background:#fff; color:#888; cursor:default; text-decoration:line-through; } 
+.date-picker .day-disabled 		{ background:#fff; color:#888; cursor:default; text-decoration:line-through; }
 .date-picker .date-picker-unused{ border-color:#dcdcdc; background:#fff; cursor:default !important; }
 .date-picker .date-picker-week-header 	{ border:1px solid #dcdcdc; background:transparent; cursor:default; font-style:oblique; }
 .date-picker .date-picker-thead .date-picker-week-header { border:0 none; cursor:help; }
-.date-picker .date-picker-day-header 	{ border:0 none; cursor:help; height:auto; padding:0 0 0.2em 0; text-transform:lowercase; }    
+.date-picker .date-picker-day-header 	{ border:0 none; cursor:help; height:auto; padding:0 0 0.2em 0; text-transform:lowercase; }
 .date-picker .date-picker-statusbar 		{ border:0 none; background:#fff; cursor:default; font-weight:normal; height:2.8em; letter-spacing:0.1em; text-transform:uppercase; }
 .date-picker .date-picker-title 			{ height:auto; padding:0.4em 0; width:auto; }
 .date-picker .date-picker-today			{ background: lighten($blue, 20%); color: #fff; }
 .date-picker .date-picker-highlight 		{ color:$brand; }
 .date-picker .date-picker-hover 			{ background: $blue; cursor:pointer; border-color:rgb(100,130,170) !important; border-color:rgba(100,130,170,.7) !important; color:#fff; overflow:hidden; outline:0px solid #ff0000; -moz-outline: 0 none; -o-highlight:0 none; }
 .date-picker .date-picker-hover.day-disabled	{ background:#fff; }
-.date-picker .month-out 			{ background:#fff; border-color:#ddd; border-color:rgba(220,220,220,0.8); color:#aaa; } 
+.date-picker .month-out 			{ background:#fff; border-color:#ddd; border-color:rgba(220,220,220,0.8); color:#aaa; }
 .date-picker .month-out.date-picker-highlight  { color:#b87676; }
-.date-picker .month-out.date-picker-hover 	{ background:#fff url(http://edinburgh.live.jadu.net/site/xfp/styles/css_img/cursor.jpg) no-repeat 0 0; cursor:pointer; border-color:rgb(100,130,170) !important; border-color:rgba(100,130,170,.7) !important; color:rgb(100,130,170); }
+.date-picker .month-out.date-picker-hover 	{ background:#fff url(../../xfp/styles/css_img/cursor.jpg) no-repeat 0 0; cursor:pointer; border-color:rgb(100,130,170) !important; border-color:rgba(100,130,170,.7) !important; color:rgb(100,130,170); }
 .date-picker .date-picker-selected-date 		{ border-color:#666 !important; border-color:rgba(5,5,5,.6) !important; color:#333; color:rgba(3,3,3,.8);}
-.date-picker .out-of-range		{ background:#fcfcfc; color:#ccc; cursor:default; font-style:oblique; opacity:0.6; } 
-.date-picker .not-selectable 	{ background:#fcfcfc; color:#ccc; cursor:default; font-style:oblique; opacity:0.8; } 
+.date-picker .out-of-range		{ background:#fcfcfc; color:#ccc; cursor:default; font-style:oblique; opacity:0.6; }
+.date-picker .not-selectable 	{ background:#fcfcfc; color:#ccc; cursor:default; font-style:oblique; opacity:0.8; }
 .oldie-mhtml .date-picker .out-of-range 		{ filter:alpha(opacity=60); }
 .oldie-mhtml .date-picker .not-selectable 	{ filter:alpha(opacity=80); }
 .date-picker .drag-enabled span,
-.date-picker .drag-enabled span { cursor:move; } 
+.date-picker .drag-enabled span { cursor:move; }
 .iehack 						{ background:#fff; border:0; display:none; margin:0; padding:0; position:absolute; z-index:9998; }
 .date-picker-control 			{ display:inline-block; }
 .oldie-mhtml .date-picker-control { _width:18px; }
 
 .date-picker-control:link,
-.date-picker-control:visited 		{ background:transparent url(http://edinburgh.live.jadu.net/site/xfp/styles/css_img/calicon.png) no-repeat 0 0; border:0 none; cursor:pointer; display: -moz-inline-stack; line-height:1; margin:0 4px; min-width:18px; position:relative; padding:0; text-decoration:none; vertical-align:text-bottom; visibility:visible; _background-image:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src='http://edinburgh.live.jadu.net/site/xfp/styles/css_img/calicon.png');        }
+.date-picker-control:visited 		{ background:transparent url(../../xfp/styles/css_img/calicon.png) no-repeat 0 0; border:0 none; cursor:pointer; display: -moz-inline-stack; line-height:1; margin:0 4px; min-width:18px; position:relative; padding:0; text-decoration:none; vertical-align:text-bottom; visibility:visible; _background-image:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src='../../xfp/styles/css_img/calicon.png');        }
 
 .date-picker-control-disabled:link,
 .date-picker-control-disabled:visited,
 .date-picker-control-disabled:hover,
-.date-picker-control-disabled:active { background:transparent url(http://edinburgh.live.jadu.net/site/xfp/styles/css_img/calopaque.png) no-repeat 0 0 !important; cursor:default; opacity:0.8; _background-image:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src='http://edinburgh.live.jadu.net/site/xfp/styles/css_img/calopaque.png'); }
+.date-picker-control-disabled:active { background:transparent url(../../xfp/styles/css_img/calopaque.png) no-repeat 0 0 !important; cursor:default; opacity:0.8; _background-image:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src='../../xfp/styles/css_img/calopaque.png'); }
 
 .date-picker-control span 		{ display:block; height:18px; margin:auto 0; overflow:hidden; width:18px; }
 
-#xfp_kiosk .date-picker-control span { height: 69px; width: 69px; } 	
+#xfp_kiosk .date-picker-control span { height: 69px; width: 69px; }
 #xfp_kiosk .date-picker-control:link,
 #xfp_kiosk .date-picker-control:visited,
 #xfp_kiosk .date-picker-control:hover,
@@ -507,7 +507,7 @@ body.fd-drag-active 			{ -webkit-user-select:none; -moz-user-select:none; -khtml
 #xfp_kiosk .date-picker-dateval:visited,
 #xfp_kiosk .date-picker-dateval:hover,
 #xfp_kiosk .date-picker-dateval:active,
-#xfp_kiosk .date-picker-dateval:focus { background:transparent url(http://edinburgh.live.jadu.net/site/xfp/styles/css_img/kiosk-date-picker.png) no-repeat 0 0; border:0 none; cursor:pointer; display: -moz-inline-stack; line-height:1; margin:0 4px; min-width:69px; position:relative; padding:0; text-decoration:none; vertical-align:text-bottom; visibility:visible; }
+#xfp_kiosk .date-picker-dateval:focus { background:transparent url(../../xfp/styles/css_img/kiosk-date-picker.png) no-repeat 0 0; border:0 none; cursor:pointer; display: -moz-inline-stack; line-height:1; margin:0 4px; min-width:69px; position:relative; padding:0; text-decoration:none; vertical-align:text-bottom; visibility:visible; }
 
 .date-picker-button-active span,
 .date-picker-control:focus span,
@@ -525,6 +525,6 @@ body.fd-drag-active 			{ -webkit-user-select:none; -moz-user-select:none; -khtml
 .date-picker-disabled .today-but,
 .date-picker-disabled .prev-but:hover,
 .date-picker-disabled .next-but:hover,
-.date-picker-disabled .today-but:hover { color:#aaa; cursor:default !important; opacity:1; }   
+.date-picker-disabled .today-but:hover { color:#aaa; cursor:default !important; opacity:1; }
 .date-picker-disabled .prev-but:hover,
 .date-picker-disabled .next-but:hover 	{ -webkit-transform:scale(1); -moz-transform:scale(1); -ie-transform:scale(1); -o-transform:scale(1); transform:scale(1); }
