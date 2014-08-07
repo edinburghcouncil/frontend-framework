@@ -1,0 +1,24 @@
+baseurl: /frontend-framework
+lsi: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "page"
+    values:
+      layout: "default"
+  - scope:
+      path: "overview"
+      type: "page"
+    values:
+      section: "Overview"
+  - scope:
+      path: "foundation"
+      type: "page"
+    values:
+      section: "Foundation"
+  - scope:
+      path: "patterns"
+      type: "page"
+    values:
+      section: "Patterns"

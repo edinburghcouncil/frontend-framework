@@ -1,0 +1,384 @@
+---
+title: Forms
+---
+
+<h2>Structure</h2>
+
+<p>In a standard form, all fields should appear in a <code>&lt;li&gt;</code> inside a <code>&lt;ul&gt;</code> inside the <code>&lt;form&gt;</code>.</p>
+
+<h4>HTML</h4>
+
+<pre>
+&lt;form&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            [form field]
+        &lt;/li&gt;
+        &lt;li&gt;
+            [form field]
+        &lt;/li&gt;
+        &lt;li&gt;
+            [form field]
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;button class=&quot;button&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+</pre>
+
+<h2>Examples</h2>
+
+<form>
+    <ul>
+        <li>
+            <label for="text-field">Text</label>
+            <input type="text" name="text-field" id="text-field" />
+        </li>
+    </ul>
+</form>
+
+<h4>HTML</h4>
+
+<pre>
+&lt;li&gt;
+    &lt;label for=&quot;text-field&quot;&gt;Text&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;text-field&quot; id=&quot;text-field&quot; /&gt;
+&lt;/li&gt;
+</pre>
+
+<form>
+    <ul>
+        <li>
+            <label for="text-field-optional">Text <em>Optional</em></label>
+            <input type="text" name="text-field-optional" id="text-field-optional" />
+        </li>
+    </ul>
+</form>
+
+<h4>HTML</h4>
+
+<pre>
+&lt;li&gt;
+    &lt;label for=&quot;text-field-optional&quot;&gt;Text &lt;em&gt;Optional&lt;/em&gt;&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;text-field-optional&quot; id=&quot;text-field-optional&quot; /&gt;
+&lt;/li&gt;
+</pre>
+
+<form>
+    <ul>
+        <li>
+            <label for="text-field-help">Text with help text</label>
+            <input type="text" name="text-field-help" id="text-field-help" title="Example help text" />
+            <p class="field-explanation">Example help text</p>
+        </li>
+    </ul>
+</form>
+
+<h4>HTML</h4>
+
+<pre>
+&lt;label for=&quot;text-field-help&quot;&gt;Text with help text&lt;/label&gt;
+&lt;input type=&quot;text&quot; name=&quot;text-field-help&quot; id=&quot;text-field-help&quot; title=&quot;Example help text&quot; /&gt;
+&lt;p class=&quot;field-explanation&quot;&gt;Example help text&lt;/p&gt;
+</pre>
+
+<form>
+    <ul>
+        <li>
+            <label for="email-field">Email</label>
+            <input type="email" name="email-field" id="email-field" />
+        </li>
+    </ul>
+</form>
+
+<h4>HTML</h4>
+
+<pre>
+&lt;li&gt;
+    &lt;label for=&quot;email-field&quot;&gt;Email&lt;/label&gt;
+    &lt;input type=&quot;email&quot; name=&quot;email-field&quot; id=&quot;email-field&quot; /&gt;
+&lt;/li&gt;
+</pre>
+
+<form>
+    <ul>
+        <li>
+            <label for="password-field">Password</label>
+            <input type="password" name="password-field" id="password-field" />
+        </li>
+    </ul>
+</form>
+
+<h4>HTML</h4>
+
+<pre>
+&lt;li&gt;
+    &lt;label for=&quot;password-field&quot;&gt;Password&lt;/label&gt;
+    &lt;input type=&quot;password&quot; name=&quot;password-field&quot; id=&quot;password-field&quot; /&gt;
+&lt;/li&gt;
+</pre>
+
+<form>
+    <ul>
+        <li>
+            <label for="textarea">Textarea</em></label>
+            <textarea name="textarea" id="textarea" rows="4" cols="30" ></textarea>
+        </li>
+    </ul>
+</form>
+
+<h4>HTML</h4>
+
+<pre>
+&lt;li&gt;
+    &lt;label for=&quot;textarea&quot;&gt;Textarea&lt;/em&gt;&lt;/label&gt;
+    &lt;textarea name=&quot;textarea&quot; id=&quot;textarea&quot; rows=&quot;4&quot; cols=&quot;30&quot; &gt;&lt;/textarea&gt;
+&lt;/li&gt;
+</pre>
+
+<form>
+    <ul>
+        <li>
+            <fieldset class="inline-fields">
+                <legend>Checkboxes</legend>
+
+                <label for="checkbox1">
+                    <input type="checkbox" name="checkbox1" id="checkbox1" class="checkbox" checked="checked" />
+                    Option 1
+                </label>
+
+                <label for="checkbox2">
+                    <input type="checkbox" name="checkbox2" id="checkbox2" class="checkbox" />
+                    Option 2
+                </label>
+
+                <label for="checkbox3">
+                    <input type="checkbox" name="checkbox3" id="checkbox3" class="checkbox" />
+                    Option 3
+                </label>
+            </fieldset>
+        </li>
+    </ul>
+</form>
+
+<h4>HTML</h4>
+
+<pre>
+&lt;li&gt;
+    &lt;fieldset class=&quot;inline-fields&quot;&gt;
+        &lt;legend&gt;Checkboxes&lt;/legend&gt;
+
+        &lt;label for=&quot;checkbox1&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; name=&quot;checkbox1&quot; id=&quot;checkbox1&quot; class=&quot;checkbox&quot; checked=&quot;checked&quot; /&gt;
+            Option 1
+        &lt;/label&gt;
+
+        &lt;label for=&quot;checkbox2&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; name=&quot;checkbox2&quot; id=&quot;checkbox2&quot; class=&quot;checkbox&quot; /&gt;
+            Option 2
+        &lt;/label&gt;
+
+        &lt;label for=&quot;checkbox3&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; name=&quot;checkbox3&quot; id=&quot;checkbox3&quot; class=&quot;checkbox&quot; /&gt;
+            Option 3
+        &lt;/label&gt;
+    &lt;/fieldset&gt;
+&lt;/li&gt;
+</pre>
+
+<form>
+    <ul>
+        <li>
+            <fieldset class="inline-fields">
+                <legend>Radio buttons</legend>
+
+                <label for="radio1">
+                    <input type="radio" name="radio1" id="radio1" class="checkbox" />
+                    One
+                </label>
+
+                <label for="radio2">
+                    <input type="radio" name="radio2" id="radio2" class="checkbox" checked="checked" />
+                    Two
+                </label>
+
+                <label for="radio3">
+                    <input type="radio" name="radio3" id="radio3" class="checkbox" />
+                    Three
+                </label>
+            </fieldset>
+        </li>
+    </ul>
+</form>
+
+<h4>HTML</h4>
+
+<pre>
+&lt;li&gt;
+    &lt;fieldset class=&quot;inline-fields&quot;&gt;
+        &lt;legend&gt;Radio buttons&lt;/legend&gt;
+
+        &lt;label for=&quot;radio1&quot;&gt;
+            &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; id=&quot;radio1&quot; class=&quot;checkbox&quot; /&gt;
+            One
+        &lt;/label&gt;
+
+        &lt;label for=&quot;radio2&quot;&gt;
+            &lt;input type=&quot;radio&quot; name=&quot;radio2&quot; id=&quot;radio2&quot; class=&quot;checkbox&quot; checked=&quot;checked&quot; /&gt;
+            Two
+        &lt;/label&gt;
+
+        &lt;label for=&quot;radio3&quot;&gt;
+            &lt;input type=&quot;radio&quot; name=&quot;radio3&quot; id=&quot;radio3&quot; class=&quot;checkbox&quot; /&gt;
+            Three
+        &lt;/label&gt;
+    &lt;/fieldset&gt;
+&lt;/li&gt;
+</pre>
+
+<form>
+    <ul>
+        <li>
+            <label for="dropdown">Dropdown</label>
+            <select name="dropdown">
+                <option value="City Centre">City Centre</option>
+                <option value="Leith">Leith</option>
+                <option value="North">North</option>
+                <option value="Southwest">Southwest</option>
+            </select>
+        </li>
+    </ul>
+</form>
+
+<h4>HTML</h4>
+
+<pre>
+&lt;li&gt;
+    &lt;label for=&quot;dropdown&quot;&gt;Dropdown&lt;/label&gt;
+    &lt;select name=&quot;dropdown&quot;&gt;
+        &lt;option value=&quot;City Centre&quot;&gt;City Centre&lt;/option&gt;
+        &lt;option value=&quot;Leith&quot;&gt;Leith&lt;/option&gt;
+        &lt;option value=&quot;North&quot;&gt;North&lt;/option&gt;
+        &lt;option value=&quot;Southwest&quot;&gt;Southwest&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/li&gt;
+</pre>
+
+<form>
+    <ul>
+        <li>
+            <label for="file-upload-field">File</label>
+            <input class="file-upload" type="file" name="file-upload-field" id="file-upload-field" />
+        </li>
+    </ul>
+</form>
+
+<h4>HTML</h4>
+
+<pre>
+&lt;li&gt;
+    &lt;label for=&quot;file-upload-field&quot;&gt;File&lt;/label&gt;
+    &lt;input class=&quot;file-upload&quot; type=&quot;file&quot; name=&quot;file-upload-field&quot; id=&quot;file-upload-field&quot; /&gt;
+&lt;/li&gt;
+</pre>
+
+<form>
+    <ul>
+        <li>
+            <label for="inline-search">Inline search (e.g. address lookup)</label>
+            <div class="form-wrapper clearfix">
+                <input type="search" name="inline-search" id="inline-search" />
+                <button class="button">Look up</button>
+            </div>
+        </li>
+    </ul>
+</form>
+
+<h4>HTML</h4>
+
+<pre>
+&lt;li&gt;
+    &lt;label for=&quot;inline-search&quot;&gt;Inline search (e.g. address lookup)&lt;/label&gt;
+    &lt;div class=&quot;form-wrapper clearfix&quot;&gt;
+        &lt;input type=&quot;search&quot; name=&quot;inline-search&quot; id=&quot;inline-search&quot; /&gt;
+        &lt;button class=&quot;button&quot;&gt;Look up&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/li&gt;
+</pre>
+
+<form>
+    <ul>
+        <li class="multiple-fieldsets">
+            <fieldset>
+                <legend>Person 1</legend>
+
+                <label for="person1-forename">Forename</label>
+                <input type="text" name="person1-forename" id="person1-forename" value="" />
+                <label for="person1-surname">Surname</label>
+                <input type="text" name="person1-surname" id="person1-surname" value="" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Person 2</legend>
+
+                <label for="person2-forename">Forename</label>
+                <input type="text" name="person2-forename" id="person2-forename" value="" />
+                <label for="person2-surname">Surname</label>
+                <input type="text" name="person2-surname" id="person2-surname" value="" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Person 3</legend>
+
+                <label for="person3-forename">Forename</label>
+                <input type="text" name="person3-forename" id="person3-forename" value="" />
+                <label for="person3-surname">Surname</label>
+                <input type="text" name="person1-surname" id="person3-surname" value="" />
+            </fieldset>
+        </li>
+    </ul>
+</form>
+
+<h4>HTML</h4>
+
+<pre>
+&lt;li class=&quot;multiple-fieldsets&quot;&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Person 1&lt;/legend&gt;
+
+        &lt;label for=&quot;person1-forename&quot;&gt;Forename&lt;/label&gt;
+        &lt;input type=&quot;text&quot; name=&quot;person1-forename&quot; id=&quot;person1-forename&quot; value=&quot;&quot; /&gt;
+        &lt;label for=&quot;person1-surname&quot;&gt;Surname&lt;/label&gt;
+        &lt;input type=&quot;text&quot; name=&quot;person1-surname&quot; id=&quot;person1-surname&quot; value=&quot;&quot; /&gt;
+    &lt;/fieldset&gt;
+
+    &lt;fieldset&gt;
+        &lt;legend&gt;Person 2&lt;/legend&gt;
+
+        &lt;label for=&quot;person2-forename&quot;&gt;Forename&lt;/label&gt;
+        &lt;input type=&quot;text&quot; name=&quot;person2-forename&quot; id=&quot;person2-forename&quot; value=&quot;&quot; /&gt;
+        &lt;label for=&quot;person2-surname&quot;&gt;Surname&lt;/label&gt;
+        &lt;input type=&quot;text&quot; name=&quot;person2-surname&quot; id=&quot;person2-surname&quot; value=&quot;&quot; /&gt;
+    &lt;/fieldset&gt;
+
+    &lt;fieldset&gt;
+        &lt;legend&gt;Person 3&lt;/legend&gt;
+
+        &lt;label for=&quot;person3-forename&quot;&gt;Forename&lt;/label&gt;
+        &lt;input type=&quot;text&quot; name=&quot;person3-forename&quot; id=&quot;person3-forename&quot; value=&quot;&quot; /&gt;
+        &lt;label for=&quot;person3-surname&quot;&gt;Surname&lt;/label&gt;
+        &lt;input type=&quot;text&quot; name=&quot;person1-surname&quot; id=&quot;person3-surname&quot; value=&quot;&quot; /&gt;
+    &lt;/fieldset&gt;
+&lt;/li&gt;
+</pre>
+
+<h3>Submit button</h3>
+
+<form>
+    <button class="button">Next</button>
+</form>
+
+<h4>HTML</h4>
+
+<pre>
+&lt;button class=&quot;button&quot;&gt;Next&lt;/button&gt;
+</pre>

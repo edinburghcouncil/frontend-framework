@@ -1,0 +1,42 @@
+/* MIXINS */
+.gel-title {
+  color: #fff;
+  margin-top: 0.75em;
+  text-align: right; }
+  @media screen and (min-width: 44em) {
+    .gel-title {
+      margin-top: 1.3em; } }
+  @media screen and (min-width: 60em) {
+    .gel-title {
+      margin-top: 1.7em; } }
+  @media screen and (min-width: 75em) {
+    .gel-title {
+      margin-top: 1.9em; } }
+
+.gel-title span {
+  display: none; }
+  @media screen and (min-width: 30em) {
+    .gel-title span {
+      display: inline; } }
+
+code,
+pre {
+  font-size: 1em;
+  font-family: Consolas,"Bitstream Vera Sans Mono","Andale Mono",Monaco,"DejaVu Sans Mono","Lucida Console",monospace; }
+
+pre {
+  background: #333;
+  color: #fff;
+  line-height: 1.5;
+  margin-bottom: 1em;
+  padding: 2em; }
+
+.colour-example {
+  color: #fff;
+  margin-bottom: 1em;
+  padding: 2em; }
+
+.grid-span {
+  background: rgb(129, 11, 25);
+  height: 50px;
+}

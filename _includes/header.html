@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<!--[if lte IE 7 ]><html lang="en" class="old"><![endif]-->
+<!--[if IE 8 ]><html lang="en" class="ie8"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+
+    <head>
+
+        <meta charset="utf-8" />
+
+        <title>{{ page.title }} | {% if page.section %}{{ page.section | append: ' | ' }}{% endif %}City of Edinburgh Council GEL</title>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta http-equiv="cleartype" content="on" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <script>
+          WebFontConfig = {
+            google: { families: [ 'Open+Sans:400,700:latin' ] }
+          };
+          (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+              '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+          })();
+        </script>
+
+        <script>
+              if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                var msViewportStyle = document.createElement("style");
+                msViewportStyle.appendChild(
+                    document.createTextNode(
+                        "@-ms-viewport{width:auto!important}"
+                    )
+                );
+                document.getElementsByTagName("head")[0].
+                appendChild(msViewportStyle);
+            }
+        </script>
+
+        <!--[if ! lte IE 8]><!-->
+            <link rel="stylesheet" media="not print" href="//www.edinburgh.gov.uk/site/styles/generic/style.css" />
+        <!--<![endif]-->
+
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" media="screen" href="//www.edinburgh.gov.uk/site/styles/generic/legacy.css" />
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!-- Styles for GEL docs only. Do not include in a project -->
+        <link rel="stylesheet" href="{{ site.baseurl }}/includes/styles/gel-docs.css" />
+        <!-- End styles for GEL docs -->
+
+        <link rel="stylesheet" media="print" href="//www.edinburgh.gov.uk/site/styles/generic/print.css" />
+
+        {% if page.description %}
+        <meta name="description" content="{{ page.description }}" />
+        {% endif %}
+
+        <meta name="apple-mobile-web-app-title" content="Edinburgh Council" />
+        <link rel="shortcut icon" href="//www.edinburgh.gov.uk/site/styles/img/icons/favicon.ico" />
+        <link rel="apple-touch-icon" href="//www.edinburgh.gov.uk/site/styles/img/icons/apple-touch-icon.png" />
+        <link rel="apple-touch-icon-precomposed" href="//www.edinburgh.gov.uk/site/styles/img/icons/apple-touch-icon.png" />
+
+    </head>
+
+    <body>
+
+        <a href="[accessibility page]" class="away skip-link" tabindex="1">Accessibility</a>
+        <a href="#content" class="away skip-link" tabindex="2">Skip to main content</a>
+        <a href="#secondary-nav" class="away skip-link" tabindex="3">Skip to secondary navigation</a>
+
+        <header role="banner">
+            <div class="wrapper header-wrapper">
+                <div class="clearfix">
+                    <div class="logo col small_2 large_3">
+                        <a href="/" tabindex="4">
+                            <img src="//www.edinburgh.gov.uk/site/styles/img/branding/logo.svg" data-fallback="//www.edinburgh.gov.uk/site/styles/img/branding/logo-fallback.png" alt="City of Edinburgh Council" height="40" width="230" />
+                        </a>
+                    </div>
+
+                    <div class="gel-title brand-type col small_2 large_6 small_switch large_switch no-bottom clearfix">
+                        G<span>lobal</span> E<span>xperience</span> L<span>anguage</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        {% if page.section %}
+        <section class="breadcrumbs bottom-space clearfix">
+            <div class="wrapper">
+                <nav class="col small_4 large_12">
+                    <a href="/" class="icon-right-open-mini after">Home</a>
+                    <a href="#" class="icon-right-open-mini after">{{ page.section }}</a>
+                    <span>{{ page.title }}</span>
+                </nav>
+            </div>
+        </section>
+
+        <div class="clearfix wrapper" role="main">
+        {% else %}
+        <div class="clearfix wrapper top-space" role="main">
+        {% endif %}
+
+            <div class="clearfix">
+                <div id="content" class="article col small_4 large_8">
