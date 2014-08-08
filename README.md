@@ -1,8 +1,10 @@
 edinburgh.gov.uk frontend framework
 ========
 
+An accompanying design guide containing details of our grid system, colours, typography, iconography, and pattern library is available at [edinburghcouncil.github.io/frontend-framework](edinburghcouncil.github.io/frontend-framework "GEL").
+
 This framework includes: 
-- compiled CSS (for quick prototyping without changin any styles)
+- compiled CSS (for quick prototyping without changing any styles)
 - icon font files
 - images
 - resources (currently the Fontello config.json file to allow adding of new icons to the font files)
