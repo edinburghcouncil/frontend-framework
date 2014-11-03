@@ -6,7 +6,7 @@ edinburgh.gov.uk uses two typefaces: FF Meta and Open Sans. Both typefaces have 
 
 ##FF Meta
 
-FF meta is the City of Edinburgh Council brand typeface. It is used in a variety of ways in print, but on edinburgh.gov.uk it is only used for h1, h2, buttons and very occasional important items (eg. log in/register links in header). It is a commercial typeface that must be used with the correct license. If you are not sure about licensing, please contact [web@edinburgh.gov.uk](mailto:web@edinburgh.gov.uk). It replaces the previously used Trebuchet MS. The font stack is `MetaWeb-Bold, "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;`
+FF meta is the City of Edinburgh Council brand typeface. It is used in a variety of ways in print, but on edinburgh.gov.uk it is only used for h1, h2, buttons and very occasional important items (eg. log in/register links in header). It is a commercial typeface that must be used with the correct licence. Under the terms of the licence, this can only be used on websites hosted on subdomains of edinburgh.gov.uk and which are managed by the City of Edinburgh Council. If you are not sure about licensing, please contact [web@edinburgh.gov.uk](mailto:web@edinburgh.gov.uk). It replaces the previously used Trebuchet MS. The font stack is `MetaWeb-Bold, "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;`
 
 ###Example
 
